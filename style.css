@@ -1,0 +1,144 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: white;
+	text-align: left;
+	padding: 0px;
+	margin: 0;
+}
+
+header{
+	background: #800000;
+	color: white;
+	padding: 30px;
+	text-align: center;
+
+}
+
+header .logo a{
+	background-image: url("images/logorelamps.png");
+	background-size: 200px;
+	background-repeat: no-repeat;
+	position: relative;
+	display: inline-block;
+	height: 50px;
+	text-indent: -99999px;
+	top: -5px;
+	width: 200px;
+}
+
+nav{
+	margin: 0px;
+}
+
+li{
+	display: inline-block;
+	margin: 20px;
+	width: 150px;
+	font-size: 28px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+
+}
+
+section {
+	background: #0D0E0E;
+	color: white;
+	padding: 20px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+.features {
+	display: flex;
+	flex-wrap: wrap;          
+	padding: 40px;
+	gap: 0px;
+	background-color: #0D0E0E;
+	color: white;
+	align-items: center;
+	
+}
+
+.features figure{
+
+	flex: 0 0 auto;
+	max-width: 500px;
+	margin 0;
+}
+
+.features img{
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 5px;
+}
+
+.maintxt {
+
+	flex: 1 1 auto;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	line-height: 30px;
+	text-align: left;
+}
+
+
+
+@media (max-width:900px){
+
+	.features{
+
+		flex-wrap: wrap;
+		text-align: center;
+
+	}
+
+}
+
+.maintxt{
+
+	max-width: wrap;
+}
+
+
+h1{
+
+	font-size: 44px;
+
+}
+
+p{
+
+	font-size: 28px;
+
+}
+
+footer{
+	background: #FFFFFF;
+	color: black;
+	padding: 40px;
+}
+
+
+button {
+	background: blue;
+	color: white;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+button:hover {
+	background: darkblue;
+}
+
