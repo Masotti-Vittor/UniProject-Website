@@ -3,46 +3,55 @@ body {
 	background-color: white;
 	text-align: left;
 	padding: 0px;
-	margin: 0;
+	margin: 0px;
 }
 
+
+/* Configs do cabecalho, bloco geral*/
 header{
 	background: #800000;
 	color: white;
-	padding: 30px;
+	padding: 10px;
 	text-align: center;
 
 }
 
+/* Aqui temos as configs da logo no cabecalho, bloco especifico*/
 header .logo a{
-	background-image: url("images/logorelamps.png");
+	background-image: url("images/ralampinhaiconbranco.png");
 	background-size: 200px;
 	background-repeat: no-repeat;
 	position: relative;
 	display: inline-block;
-	height: 50px;
+	height: 65px;
 	text-indent: -99999px;
-	top: -5px;
+	top: -15px;
 	width: 200px;
 }
 
+/* Aqui, temos um bloco entre o header geral e ul; ul, um bloco que engloba o li*/
 nav{
 	margin: 0px;
 }
 
+
+/* li possui cada texto de pagina no cabecalho*/
 li{
+	height: 5px;
 	display: inline-block;
-	margin: 20px;
-	width: 150px;
-	font-size: 28px;
+	margin: 10px;
+	width: 200px;
+	font-size: 24px;
 }
 
+/* "a", um bloco mais especifico ainda para os textos de pag*/
 a{
 	text-decoration: none;
 	color: white;
 
 }
 
+/* Bloco geral de section */
 section {
 	background: #0D0E0E;
 	color: white;
@@ -52,46 +61,68 @@ section {
 	white-space: normal;
 }
 
+/* Bloco especifico para section do carrossel e texto de resumo*/
 .features {
 	display: flex;
 	flex-wrap: wrap;          
-	padding: 40px;
+	padding: 15px;
 	gap: 0px;
 	background-color: #0D0E0E;
 	color: white;
-	align-items: center;
-	
 }
 
-.features figure{
-
-	flex: 0 0 auto;
-	max-width: 500px;
-	margin 0;
+/* Bloco mais externo do carrossel*/
+.slide{
+  	display: flex;
+	margin: 100px auto;
+  	width: 650px;
+  	gap: 1em;
+  	background-color: #0D0E0E;
+  	border-radius: 10px;
+	overflow-x: auto;
 }
 
-.features img{
-	display: inline-block;
-	margin: 0 auto;
-	width: 100%;
+.slide::-webkit-scrollbar {
+	display: none;
+}
+
+/* Bloco geral das imagens*/
+.imgslide {
+	gap: 15px;
+	display: flex;	
+	animation: spin 50s infinite linear;
+}
+
+/* Bloco de cada elemento com bloco "img"*/
+.imgslide img{
+
+	width: auto;
+	max-width: 350px;
 	height: auto;
-	display: block;
-	border-radius: 5px;
+	max-height: 450px;
+	height: auto;
+	border-radius: 8px;
+	object-fit: cover;
+	margin: 0;
 }
 
+/* Bloco texto do resumo*/
 .maintxt {
-
+	padding: 50px;
 	flex: 1 1 auto;
 	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	line-height: 30px;
+	line-height: 35px;
 	text-align: left;
 }
 
-
+@keyframes spin{
+	from {translate: 0;}
+	to {translate: -100%}
+}
 
 @media (max-width:900px){
 
@@ -109,36 +140,155 @@ section {
 	max-width: wrap;
 }
 
-
+/* Bloco titulo*/
 h1{
 
-	font-size: 44px;
+	font-size: 54px;
 
 }
 
+/* Bloco texto*/
 p{
 
 	font-size: 28px;
 
 }
 
-footer{
-	background: #FFFFFF;
-	color: black;
-	padding: 40px;
+.sponsortop{
+	height: auto;
+	justify-content: center;
+	align-items: center;
 }
 
+.line1{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 90px;
+	padding: 120px;
+}
+
+.line1 img{
+	max-height: 70px;
+	width: auto;
+
+}
+
+.sponsorbottom{
+	height: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.line2{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 90px;
+	padding: 120px;
+}
+
+.line2 img{
+	max-height: 80px;
+	width: auto;
+}
+
+.footer {
+	background: #0D0E0E;
+	color: white;
+	padding: 60px 40px;
+}
+
+.footer-container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.footer-list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	max-width: 250px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.footer-item-address {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	width: 2500px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+
+.footer-item img {
+	width: 24px;      /* icon size */
+	height: 24px;
+	object-fit: contain;
+}
+
+.footer-item-address img {
+	width: 24px;      /* icon size */
+	height: 24px;
+	object-fit: contain;
+}
+
+
+.footer-item span {
+	color: white;
+}
+
+
+.gic{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+.contact{
+	justify-content: center;
+	align-items: center;
+	background: white;
+	padding-bottom: 80px;
+	
+}
+
+.contactdiv{
+	flex-direction: column;
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
+}
 
 button {
-	background: blue;
-	color: white;
-	padding: 10px 10px;
-	border: none;
-	border-radius: 8px;
-	cursor: pointer;
-}
 
-button:hover {
-	background: darkblue;
+	background: #FFDA03;
+	color: black;
+	border: 2px solid black;
+
+	justify-content: center;
+	align-items: center;
+	
+	font-size: 38px;
+	padding: 50px 125px;
+	border-radius: 50px;
+	cursor: pointer;
 }
 

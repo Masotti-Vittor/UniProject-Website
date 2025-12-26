@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Member Application</title>
+		<link rel="stylesheet" href="contactmember.css">
+	</head>
+
+	<body>
+		<div class="contact-container">
+			<form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+				<div class="contact-left-title">
+					<h2>Apply here!</h2>
+					<hr>
+				</div>
+				<input type="hidden" name="access_key" value="a16e9e6a-6899-456c-8c3a-7f1741fb3267">
+				<input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+				<input type="email" name="email" placeholder="Your E-mail" class="contact-inputs" required>
+				<input type="institution" name="intitution" placeholder="Your University" class="contact-inputs" required>
+				<input type="semester" name="semester" placeholder="Semester" class="contact-inputs" required>
+				<textarea type="message" name="message" placeholder="Do you have a subsystem in mind? Want to say something to us? Feel free to write anything here!" class="contact-inputs"></textarea>
+				<div class="buttons">
+					<button type="submit">Submit <img src="" alt=""></button>
+					<a href="../index.html">
+						<button type="button">Home</button>
+					</a>
+				</div>
+			</form>
+			<div class="contact-right">
+				<img src="images/mail.png" alt="">	
+			</div>
+		</div>
+	</body>
+</html>
