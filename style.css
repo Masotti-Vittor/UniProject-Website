@@ -13,6 +13,9 @@ header{
 	color: white;
 	padding: 10px;
 	text-align: center;
+	justify-content: center;
+	display: flex;
+	height: 70px;
 
 }
 
@@ -37,9 +40,9 @@ nav{
 
 /* li possui cada texto de pagina no cabecalho*/
 li{
-	height: 5px;
+	
 	display: inline-block;
-	margin: 10px;
+	margin: 0px;
 	width: 200px;
 	font-size: 24px;
 }
@@ -50,6 +53,57 @@ a{
 	color: white;
 
 }
+
+/* caixa Dropdown */
+.dropdown {
+	position: relative;
+}
+
+/* seta */
+.arrow {
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+/* menu */
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #800000;
+	padding: 10px 0;
+	min-width: 220px;
+	z-index: 1000;
+	border-radius: 5px;
+}
+
+/* Itens dentro do dropdown */
+.dropdown-menu li {
+	display: block;
+	margin: 0;
+	width: 100%;
+	font-size: 18px;
+}
+
+/* Links dentro do dropdown */
+.dropdown-menu a {
+	display: block;
+	padding: 10px 20px;
+	color: white;
+	white-space: nowrap;
+}
+
+/* Hover efeito */
+.dropdown-menu a:hover {
+	background-color: #a00000;
+}
+
+/* Mostra dropdown no hover */
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
 
 /* Bloco geral de section */
 section {
